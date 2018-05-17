@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import Item from "./Item";
 import data from "./data.json";
 
@@ -21,7 +21,19 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome</h1>
         </header>
-        <p className="App-intro">
+		
+      <div id="menubar">
+        <ul id="menu">
+         
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="examples.html">Examples</a></li>
+          <li><a href="page.html">A Page</a></li>
+          <li><a href="another_page.html">Another Page</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+		
+		<div className="App-intro"><br/>
 		<table>
           {this.state.items.map((item, i) => {
             console.log(item);
@@ -30,7 +42,7 @@ class App extends Component {
             return <Item data={item} />;
           })}
         </table>
-        </p>
+		  </div>
       </div>
     );
   }

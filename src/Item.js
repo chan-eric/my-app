@@ -1,5 +1,5 @@
 import React from "react";
-import "./Item.css";
+import "./css/Item.css";
 
 const Item = props => (
   <div className="Item">
@@ -8,7 +8,7 @@ const Item = props => (
         <img src={props.data.img} alt="Smiley face" />
       </td>
       <td valign="top">
-        <h1>{props.data.name}</h1>
+        <h2>{props.data.name}</h2>
         {props.data.description}
       </td>
     </tr>
