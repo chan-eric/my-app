@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Omega 3 Fish Oil",
+		"description": "Scientific studies have found that fish oil can help to prevent and kill various cancers, including colon, prostate and breast. (13a) Not only has research proven that it makes conventional cancer drugs more effective, but it’s also an effective stand-alone therapy in natural cancer treatment.",
+		"price": "$1",
+		"img": "https://www.healthy-oil-planet.com/wp-content/uploads/2016/07/kirkland-fish-oil-225x300.jpg"
+	},
+	{
+		"name": "product2",
+		"description": "desc2",
+		"price": "$1",
+		"img": ""
+	},
+	{
+		"name": "product3",
+		"description": "desc3",
+		"price": "$1",
+		"img": ""
+	},
+	{
+		"name": "product4",
+		"description": "desc4",
+		"price": "$1",
+		"img": ""
+	}
+]

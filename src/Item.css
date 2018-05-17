@@ -1,0 +1,21 @@
+.Item {
+  text-align: left;
+  background-color: #222;
+
+  padding: 10px;
+  color: white;
+}
+
+.Item1 {
+  text-align: left;
+  background-color: #222;
+
+  padding: 10px;
+  color: white;
+}
+
+img { 
+    display: inline-block;
+    height: 100px; 
+    width: 100px;
+}
