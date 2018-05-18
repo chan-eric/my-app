@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: Blue;
+  #background-color: #808080;
+  background-color: white;
   #width: 100px;
   #padding: 50px;
   color: white;
@@ -12,12 +13,15 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  #background-color: #222;
+  background: #323534 url(back.png) repeat-x;
+  height: 136px;
   padding: 20px;
   align: right;
   color: white;
+
 }
+
 
 .App-title {
   font-size: 1.5em;
@@ -25,29 +29,41 @@
 
 .App-intro {
   font-size: large;
+  margin: 10px 300px 100px 300px;
+  #width: 880px;
 }
+
+.Contact {
+	color: #222;
+}
+
+.Menubar {
+  margin: 35px 300px 100px 0px;
+}
+
+.Banner {  
+  background: transparent url(banner.jpg) no-repeat;
+  height: 180px;
+  margin-bottom: 10px;
+  border: 10px solid #DDD;}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
-#main, #logo, #menubar, #site_content, #footer
-{ margin-left: auto; 
-  margin-right: auto;}
-
-ul#menu
+.Menu
 { float: right;
   margin: 0;}
 
-ul#menu li
+.Menu li
 { float: left;
   padding: 0 0 0 9px;
   list-style: none;
   margin: 1px 2px 0 0;
   background: #5A5A5A url(tab.png) no-repeat 0 0;}
 
-ul#menu li a
+.Menu li a
 { font: normal 100% 'trebuchet ms', sans-serif;
   display: block; 
   float: left; 
@@ -58,32 +74,17 @@ ul#menu li a
   text-decoration: none;
   background: #5A5A5A url(tab.png) no-repeat 100% 0;} 
 
-ul#menu li.selected a
+.Menu li.selected a
 { height: 20px;
   padding: 6px 35px 5px 28px;}
 
-ul#menu li.selected
+.Menu li.selected
 { margin: 1px 2px 0 0;
   background: #00C6F0 url(tab_selected.png) no-repeat 0 0;}
 
-ul#menu li.selected a, ul#menu li.selected a:hover
+.Menu li.selected a, .Menu li.selected a:hover
 { background: #00C6F0 url(tab_selected.png) no-repeat 100% 0;
   color: #FFF;}
 
-ul#menu li a:hover
+.Menu li a:hover
 { color: #E4EC04;}
-
-.left
-{ float: left;
-  width: auto;
-  margin-right: 10px;}
-
-.right
-{ float: right; 
-  width: auto;
-  margin-left: 10px;}
-
-.center
-{ display: block;
-  text-align: center;
-  margin: 20px auto;}

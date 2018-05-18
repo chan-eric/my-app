@@ -1,49 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
 import './css/App.css';
-import Item from "./Item";
-import data from "./data.json";
+import logo from './logo.svg';
+import Table from "./Table";
+import Contact from "./Contact";
 
 
 class App extends Component {
     constructor(props) {
       super(props);
-
-      this.state = {
-        items: data
-      };
     }
 	
   render() {
     return (
+    <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome</h1>
+          
+
+          <div className="Menubar">
+            <ul className="Menu">
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/contact'>Contact Us</Link></li>
+            </ul> 
+          </div>
         </header>
 		
-      <div id="menubar">
-        <ul id="menu">
-         
-          <li class="selected"><a href="index.html">Home</a></li>
-          <li><a href="examples.html">Examples</a></li>
-          <li><a href="page.html">A Page</a></li>
-          <li><a href="another_page.html">Another Page</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+      
 		
-		<div className="App-intro"><br/>
-		<table>
-          {this.state.items.map((item, i) => {
-            console.log(item);
-            //return <li key={item.description}> {item.}</li>
+		  <div className="App-intro">
 
-            return <Item data={item} />;
-          })}
-        </table>
+        <div className="Banner"></div>
+          <Route exact path='/' component={Table}/>
+          <Route path='/contact' component={Contact}/>	
+		  
 		  </div>
-      </div>
+    </div>
+    </BrowserRouter>
     );
   }
 }
