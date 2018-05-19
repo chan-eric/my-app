@@ -13,7 +13,7 @@ export default class Table  extends Component {
 	
   render() { return ( <table>
           {this.state.items.map((item, i) => {
-            console.log(item);
+            //console.log(item);
             //return <li key={item.description}> {item.}</li>
 
             return <Item data={item} />;

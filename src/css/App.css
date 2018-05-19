@@ -1,7 +1,9 @@
+
+
 .App {
   text-align: center;
   #background-color: #808080;
-  background-color: white;
+  #background-color: white;
   #width: 100px;
   #padding: 50px;
   color: white;
@@ -13,12 +15,12 @@
 }
 
 .App-header {
-  #background-color: #222;
-  background: #323534 url(back.png) repeat-x;
-  height: 136px;
-  padding: 20px;
+  background-color: #222;
+  #background: #323534 url(back.png) repeat-x;
+  #height: 112	px;
+  #padding: 20px;
   align: right;
-  color: white;
+  #color: white;
 
 }
 
@@ -28,33 +30,41 @@
 }
 
 .App-intro {
-  font-size: large;
-  margin: 10px 300px 100px 300px;
+	background-color: #222;
+  #font-size: large;
+  #-moz-border-radiusmargin: 10px 300px 100px 300px;
   #width: 880px;
 }
 
 .Contact {
-	color: #222;
+	color: white;
 }
 
-.Menubar {
-  margin: 35px 300px 100px 0px;
-}
 
 .Banner {  
   background: transparent url(banner.jpg) no-repeat;
-  height: 180px;
-  margin-bottom: 10px;
-  border: 10px solid #DDD;}
+  height: 100px;
+  #margin-bottom: 10px;
+  border: 1px solid #DDD;}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: gray;
+}
+
+.navbar {
+    margin-bottom: 0px;
+	
+}
+
+/*
 .Menu
-{ float: right;
-  margin: 0;}
+{ float: left;
+  margin: 10;}
 
 .Menu li
 { float: left;
@@ -68,7 +78,7 @@
   display: block; 
   float: left; 
   height: 20px;
-  padding: 6px 35px 5px 28px;
+  #padding: 6px 35px 5px 28px;
   text-align: center;
   color: #FFF;
   text-decoration: none;
@@ -76,7 +86,7 @@
 
 .Menu li.selected a
 { height: 20px;
-  padding: 6px 35px 5px 28px;}
+  #padding: 6px 35px 5px 28px;}
 
 .Menu li.selected
 { margin: 1px 2px 0 0;
@@ -88,3 +98,4 @@
 
 .Menu li a:hover
 { color: #E4EC04;}
+*/
