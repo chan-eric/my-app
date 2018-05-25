@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Router, Link } from "react-router-dom";
 import {Navbar, Nav, NavItem} from "react-bootstrap";
 import "./css/App.css";
 import logo from "./logo.svg";
@@ -11,7 +11,8 @@ class App extends Component {
   render() {
     return (
 		
-      <BrowserRouter>
+		
+      <BrowserRouter basename="/my-app">
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -23,12 +24,13 @@ class App extends Component {
 				</Navbar.Header>
 				<Navbar.Collapse>
 				<Nav className="nav">
-	   	 			<NavItem className={window.location.pathname === "/" && "selected"} eventKey={1} href="/">
+	   	 			<NavItem eventKey={1} href={`${process.env.PUBLIC_URL}/`}>
 	     	 			Home
 	    			</NavItem>
-	   	 			<NavItem className={window.location.pathname.startsWith("/contact") && "selected"} eventKey={2} href="/contact">
+	   	 			<NavItem eventKey={2} href={`${process.env.PUBLIC_URL}/contact`}>
 	     	 			Contact Us
 	    			</NavItem>
+					<Link to="/contact"/>
 				</Nav>
 				</Navbar.Collapse>
 			</Navbar>
