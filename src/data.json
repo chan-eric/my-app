@@ -6,21 +6,21 @@
 		"img": "https://www.healthy-oil-planet.com/wp-content/uploads/2016/07/kirkland-fish-oil-225x300.jpg"
 	},
 	{
-		"name": "product2",
-		"description": "desc2",
-		"price": "$1",
-		"img": ""
+		"name": "骨膠原",
+		"description": "功效：1. 加速软骨细胞的修复和再生，提供关节建造、修补、软骨组织、肌腱、韧带的主要材料 2. 刺激软骨弹性组织的修复、再造、预防软骨失去弹性 3. 控制滑膜分泌液的平衡，避免关节萎缩 4. 减轻关节发炎，舒解神经炎、韧带炎、肌腱炎",
+		"price": "¥206 + 郵費",
+		"img": "https://s3.us-east-2.amazonaws.com/bizhubphoto/glucosamine.png"
 	},
 	{
 		"name": "product3",
 		"description": "desc3",
-		"price": "$1",
+		"price": "¥",
 		"img": ""
 	},
 	{
 		"name": "product4",
 		"description": "desc4",
-		"price": "$1",
+		"price": "¥x",
 		"img": ""
 	}
 ]
